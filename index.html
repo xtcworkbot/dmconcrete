@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>DM Concrete — Sydney's most trusted concreter. Driveways, slabs, paving.</title>
+<meta name="description" content="Daniel from DM Concrete — 5.0★ on Google. Driveways, shed slabs, footings, paving across Sydney. Honest quotes, sharp finish, on time. Call 0410 658 592." />
+
+<!-- Mobile / share preview -->
+<meta name="theme-color" content="#0B0F0D" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="DM Concrete" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=yes" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/og/apple-touch-icon.png" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230B0F0D'/><text x='32' y='44' text-anchor='middle' font-family='Anton, Arial Black, sans-serif' font-size='38' font-weight='900' fill='%237FA265' letter-spacing='-2'>DM</text></svg>" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/og/favicon-32.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="DM Concrete — Sydney's most trusted concreter" />
+<meta property="og:description" content="5.0★ on Google. Driveways, shed slabs, footings, paving across Sydney's Inner West. Owner-operated. Call Daniel: 0410 658 592." />
+<meta property="og:image" content="assets/og/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="DM Concrete" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="DM Concrete — Sydney's most trusted concreter" />
+<meta name="twitter:description" content="5.0★ on Google. Driveways, slabs, paving across Sydney. Call Daniel: 0410 658 592." />
+<meta name="twitter:image" content="assets/og/og-image.png" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil+Display:wght@600;800;900&family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0A0E0C;
+    --bg-2:#0F1411;
+    --surface:#161B18;
+    --surface-2:#1E2421;
+    --surface-3:#262D29;
+    --line:rgba(232,228,217,.10);
+    --line-2:rgba(232,228,217,.18);
+    --ink:#E8E4D8;
+    --ink-soft:#D8D4C7;
+    --muted:#8A8F86;
+    --dim:#5A5F58;
+    --moss:#6B8A4F;
+    --moss-2:#7FA365;
+    --olive:#3D4A2E;
+    --olive-deep:#262E1C;
+    --steel:#393F3A;
+    --rust:#B0481E;
+    --asphalt:#1A1E1B;
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+  html,body{ background:var(--bg); color:var(--ink); font-family:'Archivo', system-ui, sans-serif; }
+  ::selection{ background:var(--moss); color:#0A0E0C; }
+
+  /* Typography classes */
+  .f-display{ font-family:'Anton', 'Arial Black', sans-serif; font-weight:400; letter-spacing:-0.005em; text-transform:uppercase; }
+  .f-stencil{ font-family:'Big Shoulders Stencil Display', sans-serif; font-weight:800; letter-spacing:0.005em; text-transform:uppercase; }
+  .f-body{ font-family:'Archivo', sans-serif; }
+  .f-mono{ font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; }
+
+  .bg-base{ background:var(--bg); }
+  .bg-surface{ background:var(--surface); }
+  .bg-surface2{ background:var(--surface-2); }
+  .bg-olive{ background:var(--olive); }
+  .bg-olive-deep{ background:var(--olive-deep); }
+  .bg-moss{ background:var(--moss); }
+  .bg-asphalt{ background:var(--asphalt); }
+  .ink{ color:var(--ink); }
+  .ink-soft{ color:var(--ink-soft); }
+  .muted{ color:var(--muted); }
+  .moss{ color:var(--moss-2); }
+  .rust{ color:var(--rust); }
+
+  /* Grain / noise */
+  .grain{ position:relative; }
+  .grain::after{
+    content:''; position:absolute; inset:0; pointer-events:none; z-index:1; opacity:.28;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: overlay;
+  }
+  .grain-soft::after{ opacity:.18; }
+  .grain-heavy::after{ opacity:.45; }
+
+  /* Concrete-tinted surfaces */
+  .concrete-surface{
+    background:
+      radial-gradient(900px 400px at 25% 5%, rgba(127,163,101,.10), transparent 60%),
+      radial-gradient(600px 300px at 90% 95%, rgba(176,72,30,.10), transparent 60%),
+      linear-gradient(180deg, #1B201D, #11150F);
+  }
+
+  /* Headline metrics */
+  .display-hero{ line-height:.88; letter-spacing:-0.01em; }
+  .display-large{ line-height:.92; letter-spacing:-0.005em; }
+  .display-section{ line-height:.94; letter-spacing:0; }
+
+  /* Eyebrow */
+  .eyebrow{ font-family:'JetBrains Mono'; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; font-size:11px; color:var(--moss-2); }
+
+  /* Buttons */
+  .btn{ position:relative; display:inline-flex; align-items:center; gap:.55rem; padding:.95rem 1.4rem; border-radius:4px; font-weight:700; letter-spacing:0.04em; font-size:13px; text-transform:uppercase; transition: transform .35s cubic-bezier(.2,.9,.2,1.2), background .25s ease, color .25s ease, border-color .25s ease; will-change:transform; font-family:'Archivo'; }
+  .btn:hover{ transform: translateY(-2px); }
+  .btn:active{ transform: translateY(0); }
+  .btn-primary{ background:var(--moss); color:#0A0E0C; box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), 0 1px 0 rgba(0,0,0,.4), 0 22px 36px -16px rgba(107,138,79,.55); }
+  .btn-primary:hover{ background:var(--moss-2); }
+  .btn-ghost{ border:1px solid var(--line-2); color:var(--ink); background:transparent; }
+  .btn-ghost:hover{ background:rgba(232,228,217,.04); border-color: rgba(232,228,217,.3); }
+  .btn-bone{ background:var(--ink); color:var(--bg); }
+  .btn-bone:hover{ background:#fff; }
+  .btn:focus-visible{ outline:2px solid var(--moss-2); outline-offset:3px; }
+
+  /* Chip */
+  .chip{ display:inline-flex; align-items:center; gap:.45rem; padding:.4rem .7rem; border-radius:3px; font-size:11px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; font-family:'JetBrains Mono'; border:1px solid var(--line-2); background:rgba(255,255,255,.02); color:var(--ink-soft); }
+  .chip-moss{ background:var(--moss); border-color:transparent; color:#0A0E0C; }
+  .chip-olive{ background:var(--olive-deep); border-color:var(--line-2); color:var(--moss-2); }
+  .chip-rust{ background:transparent; border-color:var(--rust); color:var(--rust); }
+
+  /* Diagonal stripe pattern */
+  .stripes{
+    background-image: repeating-linear-gradient( 135deg, rgba(255,255,255,.05) 0 2px, transparent 2px 14px );
+  }
+  .hazard{
+    background-image: repeating-linear-gradient( 45deg, var(--moss) 0 12px, #0A0E0C 12px 24px );
+  }
+
+  /* Dot rule */
+  .dot-rule{ height:1px; background-image:linear-gradient(to right, currentColor 50%, transparent 0%); background-size:8px 1px; background-repeat:repeat-x; opacity:.25; }
+
+  /* Marquee */
+  .marquee{ overflow:hidden; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+  .marquee-track{ display:flex; gap:3rem; animation: scroll 38s linear infinite; width:max-content; }
+  @keyframes scroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  /* Image card */
+  .photo{ position:relative; overflow:hidden; border-radius:6px; }
+  .photo img{ display:block; width:100%; height:100%; object-fit:cover; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); filter: contrast(1.02) saturate(.9); }
+  .photo:hover img{ transform: scale(1.04); }
+  .photo .veil{ position:absolute; inset:0; background: linear-gradient(180deg, rgba(10,14,12,0) 40%, rgba(10,14,12,.65) 100%); pointer-events:none; }
+  .photo .veil-color{ position:absolute; inset:0; background: linear-gradient(180deg, rgba(61,74,46,.15), rgba(10,14,12,.4)); mix-blend-mode:multiply; pointer-events:none; }
+  .photo .frame{ position:absolute; inset:0; border:1px solid rgba(255,255,255,.06); border-radius:6px; pointer-events:none; }
+
+  /* Image badge */
+  .img-badge{
+    position:absolute; left:14px; top:14px; padding:.4rem .65rem; border-radius:3px;
+    background:rgba(10,14,12,.78); color:var(--ink); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; font-family:'JetBrains Mono'; backdrop-filter: blur(6px);
+    border:1px solid rgba(255,255,255,.08);
+  }
+
+  /* Sticky CTA */
+  .sticky-cta{ position:fixed; left:12px; right:12px; bottom:12px; z-index:60; }
+  @media (max-width: 767px){ body{ padding-bottom: 84px; } }
+
+  /* Reveal */
+  .reveal{ opacity:0; transform: translateY(14px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in{ opacity:1; transform: translateY(0); }
+
+  /* Star */
+  .star{ color:#D9A23A; letter-spacing:0.05em; }
+
+  /* Section underline */
+  .uline{ background-image: linear-gradient(transparent 65%, var(--moss) 65%, var(--moss) 88%, transparent 88%); padding: 0 .1em; color: var(--ink); }
+
+  /* Card base */
+  .card{ border-radius:6px; padding:1.6rem; transition: transform .4s ease, border-color .4s ease; }
+  .card:hover{ transform: translateY(-3px); }
+  .card-line{ border:1px solid var(--line); background: rgba(255,255,255,.015); }
+  .card-line:hover{ border-color: var(--line-2); }
+
+  /* Header link */
+  .navlink{ position:relative; font-family:'JetBrains Mono'; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); }
+  .navlink::after{ content:''; position:absolute; left:0; right:0; bottom:-6px; height:1px; background:var(--moss-2); transform:scaleX(0); transform-origin:left; transition: transform .35s ease; }
+  .navlink:hover::after{ transform: scaleX(1); }
+  .navlink:hover{ color:var(--ink); }
+
+  /* Stencil stamp */
+  .stamp{
+    border:1.5px solid var(--ink); padding:.45rem .8rem; border-radius:3px;
+    font-family:'Big Shoulders Stencil Display'; font-weight:900; letter-spacing:.06em; font-size:13px; text-transform:uppercase;
+    transform: rotate(-2deg); display:inline-block;
+  }
+  .stamp-moss{ border-color: var(--moss-2); color: var(--moss-2); }
+
+  /* Hero photo aspect */
+  .hero-photo{ aspect-ratio: 4/5; }
+  @media (min-width: 1024px){ .hero-photo{ aspect-ratio: 4/5.4; } }
+
+  /* Header */
+  header.site{ position:sticky; top:0; z-index:50; backdrop-filter: blur(14px); background: rgba(10,14,12,.78); border-bottom: 1px solid var(--line); }
+
+  /* Form */
+  .field{ width:100%; background:transparent; border:0; border-bottom:1px solid var(--line-2); padding:14px 0; color:var(--ink); font-size:16px; outline:none; font-family:'Archivo'; }
+  .field::placeholder{ color: var(--dim); }
+  .field:focus{ border-bottom-color: var(--moss-2); }
+  .label{ font-family:'JetBrains Mono'; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color: var(--muted); }
+
+  /* Big number */
+  .big-num{ font-feature-settings: 'tnum'; }
+
+  /* Section dividers */
+  .top-rule{ height:1px; background: var(--line); }
+
+  /* Scallop */
+  .scallop{ --c: var(--bg); height: 22px; background: radial-gradient(circle at 11px 0px, var(--c) 11px, transparent 12px) 0 0/22px 22px; }
+
+  /* Concrete bar / progress */
+  .bar{ height:6px; background: var(--surface-2); border-radius:2px; overflow:hidden; }
+  .bar > span{ display:block; height:100%; background: var(--moss); }
+
+  /* Hover effects for cards */
+  .card-link:hover .arrow{ transform: translate(4px,-4px); }
+  .arrow{ transition: transform .4s ease; }
+
+  /* Number ticker */
+  .ticker{ font-variant-numeric: tabular-nums; }
+
+  /* Vertical labels */
+  .vlabel{ writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing:0.4em; font-family:'JetBrains Mono'; font-size:10px; text-transform:uppercase; color:var(--muted); }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .marquee-track{ animation:none; }
+  }
+</style>
+</head>
+<body class="bg-base ink">
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="border-b border-[color:var(--line)] text-[11px] tracking-[0.16em] uppercase py-2 f-mono">
+  <div class="max-w-[1400px] mx-auto px-5 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-3 text-[color:var(--ink-soft)]">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-[color:var(--moss-2)] animate-pulse"></span>
+      <span class="hidden sm:inline">Booking Sydney Inner West · Mon–Fri 7a–5p</span>
+      <span class="sm:hidden">Booking Inner West Sydney</span>
+    </div>
+    <div class="hidden md:flex items-center gap-5 text-[color:var(--muted)]">
+      <span>Est. Sydney</span>
+      <span class="moss">★ 5.0 Google · 5/5</span>
+    </div>
+    <a href="tel:0410658592" class="moss hover:underline">0410 658 592 →</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="max-w-[1400px] mx-auto px-5 h-[72px] flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3 group">
+      <span class="w-10 h-10 border border-[color:var(--moss-2)] text-[color:var(--moss-2)] flex items-center justify-center f-display text-[18px] tracking-tight">DM</span>
+      <span class="f-display text-[22px] leading-none tracking-tight">DM&nbsp;Concrete</span>
+      <span class="chip chip-olive hidden sm:inline-flex !text-[10px] !py-[3px]">EST. SYDNEY</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7">
+      <a class="navlink" href="#work">01 · Work</a>
+      <a class="navlink" href="#services">02 · Services</a>
+      <a class="navlink" href="#reviews">03 · Reviews</a>
+      <a class="navlink" href="#process">04 · Process</a>
+      <a class="navlink" href="#contact">05 · Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:0410658592" class="hidden sm:inline-flex btn btn-ghost !py-2 !px-3 !text-[11px]">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+        0410 658 592
+      </a>
+      <a href="#contact" class="btn btn-primary !py-2 !px-4 !text-[11px]">Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grain overflow-hidden">
+  <!-- Decorative -->
+  <div class="absolute inset-0 -z-0 pointer-events-none"
+       style="background:
+        radial-gradient(900px 600px at 85% 5%, rgba(107,138,79,.18), transparent 60%),
+        radial-gradient(800px 600px at 5% 95%, rgba(38,46,28,.55), transparent 60%);"></div>
+
+  <div class="max-w-[1400px] mx-auto px-5 pt-10 lg:pt-16 pb-12 lg:pb-20 relative">
+
+    <!-- Top meta -->
+    <div class="flex flex-wrap items-center gap-3 mb-8 lg:mb-12">
+      <span class="chip"><span class="w-1.5 h-1.5 rounded-full bg-[color:var(--moss-2)]"></span> 5.0 ★ Google · 5/5 reviews</span>
+      <span class="chip"><span class="w-1.5 h-1.5 rounded-full bg-[color:var(--ink)]"></span> Croydon NSW · Inner West</span>
+      <span class="chip hidden md:inline-flex">Owner · Daniel</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-y-10 lg:gap-8">
+      <!-- Headline -->
+      <div class="col-span-12 lg:col-span-8">
+        <h1 class="f-display display-hero text-[88px] sm:text-[140px] md:text-[180px] lg:text-[230px] xl:text-[260px]">
+          <span class="block">Built</span>
+          <span class="block">to <span class="text-[color:var(--moss-2)]">last.</span></span>
+          <span class="block">Poured to <span class="f-stencil inline-block text-[0.85em] align-baseline">spec.</span></span>
+        </h1>
+
+        <p class="mt-10 max-w-[640px] text-[16px] leading-[1.65] text-[color:var(--ink-soft)]">
+          Founded and led by <span class="uline">Daniel</span>, DM&nbsp;Concrete delivers residential and light commercial concreting across Sydney's Inner West. Driveways, structural slabs, footings and paving — quoted honestly, finished to specification, and backed by a perfect 5.0 Google rating.
+        </p>
+
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a href="tel:0410658592" class="btn btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+            Call Daniel · 0410 658 592
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Get a free quote
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#work" class="btn btn-ghost !border-transparent">
+            See recent jobs ↓
+          </a>
+        </div>
+
+        <!-- Trust row -->
+        <div class="mt-14 grid grid-cols-3 gap-4 sm:gap-8 max-w-[640px] border-t border-[color:var(--line)] pt-6">
+          <div>
+            <div class="f-display text-[48px] sm:text-[64px] leading-[0.85] big-num">5.0<span class="moss">★</span></div>
+            <div class="label mt-2">Google rating</div>
+          </div>
+          <div>
+            <div class="f-display text-[48px] sm:text-[64px] leading-[0.85] big-num">100<span class="muted">%</span></div>
+            <div class="label mt-2">Would recommend</div>
+          </div>
+          <div>
+            <div class="f-display text-[48px] sm:text-[64px] leading-[0.85] big-num">15<span class="muted">+ YR</span></div>
+            <div class="label mt-2">On the tools</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero photo -->
+      <div class="col-span-12 lg:col-span-4">
+        <div class="relative">
+          <div class="photo hero-photo shadow-[0_30px_60px_-30px_rgba(0,0,0,.8)]">
+            <img src="assets/job-patio.webp" alt="Finished concrete patio in Croydon by DM Concrete" loading="eager">
+            <div class="veil"></div>
+            <div class="veil-color"></div>
+            <div class="frame"></div>
+            <span class="img-badge">FILE 04 · Patio · Croydon</span>
+
+            <!-- spec tag in corner -->
+            <div class="absolute top-4 right-4 chip chip-moss !text-[10px] !py-[3px]">★ Verified job</div>
+
+            <!-- floating review -->
+            <div class="absolute left-4 right-4 bottom-4 bg-[color:var(--surface)] border border-[color:var(--line-2)] rounded-md p-4 flex items-start gap-3 backdrop-blur">
+              <div class="w-10 h-10 rounded-full bg-[color:var(--olive-deep)] text-[color:var(--moss-2)] flex items-center justify-center font-bold f-display text-[16px]">P</div>
+              <div class="text-[13px] leading-snug">
+                <div class="flex items-center gap-1 mb-1">
+                  <span class="star">★★★★★</span>
+                  <span class="text-[10.5px] muted ml-1 f-mono uppercase tracking-wider">Paul · Local Guide</span>
+                </div>
+                <p class="text-[color:var(--ink-soft)]">"Quality of work amazing. Couldn't be happier."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Steel sticker stamp -->
+          <div class="absolute -top-4 -left-4 sm:-top-5 sm:-left-5 bg-[color:var(--moss)] rounded-full w-[112px] h-[112px] sm:w-[128px] sm:h-[128px] flex flex-col items-center justify-center rotate-[-8deg] text-[color:var(--bg)] shadow-[0_18px_30px_-12px_rgba(0,0,0,.8)] border-[3px] border-[color:var(--bg)]">
+            <span class="text-[9px] tracking-[0.18em] uppercase font-bold f-mono">Free</span>
+            <span class="f-display text-[34px] sm:text-[40px] leading-none">Quote</span>
+            <span class="text-[9px] tracking-[0.14em] uppercase mt-1 f-mono">No obligation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hazard tape strip -->
+  <div class="h-3 hazard"></div>
+
+  <!-- Marquee -->
+  <div class="bg-[color:var(--asphalt)] text-[color:var(--ink)] py-5 border-y border-[color:var(--line)] marquee">
+    <div class="marquee-track f-display text-[34px] md:text-[44px]">
+      <span class="flex items-center gap-12">
+        <span>Driveways</span><span class="moss">✦</span>
+        <span>Shed Slabs</span><span class="moss">✦</span>
+        <span>Footings</span><span class="moss">✦</span>
+        <span>Paving</span><span class="moss">✦</span>
+        <span>Pathways</span><span class="moss">✦</span>
+        <span>Crawl Space</span><span class="moss">✦</span>
+        <span>Concrete Levelling</span><span class="moss">✦</span>
+        <span>Reinforced Slabs</span><span class="moss">✦</span>
+      </span>
+      <span class="flex items-center gap-12" aria-hidden="true">
+        <span>Driveways</span><span class="moss">✦</span>
+        <span>Shed Slabs</span><span class="moss">✦</span>
+        <span>Footings</span><span class="moss">✦</span>
+        <span>Paving</span><span class="moss">✦</span>
+        <span>Pathways</span><span class="moss">✦</span>
+        <span>Crawl Space</span><span class="moss">✦</span>
+        <span>Concrete Levelling</span><span class="moss">✦</span>
+        <span>Reinforced Slabs</span><span class="moss">✦</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE STRIP -->
+<section class="bg-surface border-b border-[color:var(--line)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-12 lg:py-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+      <div class="flex items-start gap-3">
+        <div class="w-10 h-10 rounded-sm bg-[color:var(--olive-deep)] border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <div>
+          <div class="f-display text-[20px] tracking-tight">Honest Quotes</div>
+          <p class="text-[13.5px] muted leading-[1.55] mt-1">No mystery line items. Scope, price, timeline — agreed before the shovel hits dirt.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-10 h-10 rounded-sm bg-[color:var(--olive-deep)] border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <div>
+          <div class="f-display text-[20px] tracking-tight">On Time, Always</div>
+          <p class="text-[13.5px] muted leading-[1.55] mt-1">Quotes when promised. Pour day on the day. Customers write reviews about it.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-10 h-10 rounded-sm bg-[color:var(--olive-deep)] border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4Z"/></svg>
+        </div>
+        <div>
+          <div class="f-display text-[20px] tracking-tight">Built to Last</div>
+          <p class="text-[13.5px] muted leading-[1.55] mt-1">Tied rebar. Right mix. Right cure. Doesn't crack next winter because prep is right.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-10 h-10 rounded-sm bg-[color:var(--olive-deep)] border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 11c0 5-9 11-9 11S3 16 3 11a9 9 0 1 1 18 0Z"/><circle cx="12" cy="11" r="3"/></svg>
+        </div>
+        <div>
+          <div class="f-display text-[20px] tracking-tight">Local. Accountable.</div>
+          <p class="text-[13.5px] muted leading-[1.55] mt-1">Croydon-based. We turn up. We answer the phone. Sort issues after, no debate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="relative">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-12 lg:mb-16">
+      <div class="max-w-[760px]">
+        <div class="eyebrow mb-4">— 02 / What We Pour</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[92px] lg:text-[124px]">Six things, <br/>done <span class="text-[color:var(--moss-2)]">properly.</span></h2>
+      </div>
+      <p class="max-w-[380px] text-[15px] muted leading-[1.65]">We don't pretend to do everything. We do concrete — domestic and small-commercial — and we do it the way we'd want it done on our own property.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+
+      <!-- 01 Driveways -->
+      <article class="card card-line bg-surface relative overflow-hidden card-link">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] muted tracking-widest">01 / DRIVEWAYS</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--moss-2)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">Driveways &amp; Pathways</h3>
+        <p class="mt-3 text-[14px] muted leading-[1.6] max-w-[320px]">New pours or replacements. Plain, broomed, or exposed aggregate. Long, short, sloped, awkward — we've poured them all.</p>
+        <div class="mt-8 stripes h-[2px] w-1/2 opacity-60"></div>
+        <ul class="mt-3 text-[12.5px] muted space-y-1 f-mono uppercase tracking-wider">
+          <li>· Reinforced for vehicle loads</li>
+          <li>· Saw-cut control joints</li>
+          <li>· Steel mesh + bar where needed</li>
+        </ul>
+      </article>
+
+      <!-- 02 Slabs -->
+      <article class="card bg-moss text-[color:var(--bg)] relative overflow-hidden card-link">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] text-[color:var(--bg)]/70 tracking-widest">02 / SLABS</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--bg)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">Shed &amp; Structural Slabs</h3>
+        <p class="mt-3 text-[14px] text-[color:var(--bg)]/80 leading-[1.6] max-w-[320px]">Garage, shed, granny flat footings. Engineered when needed. Square, level, ready for whatever lands on top.</p>
+        <div class="mt-8 h-[2px] w-1/2 bg-[color:var(--bg)]/30"></div>
+        <ul class="mt-3 text-[12.5px] text-[color:var(--bg)]/75 space-y-1 f-mono uppercase tracking-wider">
+          <li>· Engineer-spec rebar mats</li>
+          <li>· Vapour barriers + sand bed</li>
+          <li>· Trowel-finished to plate</li>
+        </ul>
+      </article>
+
+      <!-- 03 Paving -->
+      <article class="card concrete-surface relative overflow-hidden grain grain-heavy card-link border border-[color:var(--line-2)]">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] text-[color:var(--ink-soft)]/70 tracking-widest">03 / PAVING</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--moss-2)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">General Paving</h3>
+        <p class="mt-3 text-[14px] text-[color:var(--ink-soft)]/80 leading-[1.6] max-w-[320px]">Patios, courtyards, side passages. Plain concrete, decorative finishes, or laid pavers — whatever fits the space.</p>
+        <div class="mt-8 h-[2px] w-1/2 bg-[color:var(--ink-soft)]/30"></div>
+        <ul class="mt-3 text-[12.5px] text-[color:var(--ink-soft)]/75 space-y-1 f-mono uppercase tracking-wider">
+          <li>· Drainage falls done right</li>
+          <li>· Edge restraints + haunching</li>
+          <li>· Clean transitions to existing</li>
+        </ul>
+      </article>
+
+      <!-- 04 Footings -->
+      <article class="card card-line bg-surface relative overflow-hidden card-link">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] muted tracking-widest">04 / FOOTINGS</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--moss-2)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">Footings &amp; Foundations</h3>
+        <p class="mt-3 text-[14px] muted leading-[1.6] max-w-[320px]">Strip footings. Pad footings. Retaining wall bases. The part nobody sees — done so the part everyone sees doesn't move.</p>
+        <div class="mt-8 h-[2px] w-1/2 bg-[color:var(--line-2)]"></div>
+        <ul class="mt-3 text-[12.5px] muted space-y-1 f-mono uppercase tracking-wider">
+          <li>· Engineer drawings followed</li>
+          <li>· Inspections coordinated</li>
+          <li>· Soil + site checked</li>
+        </ul>
+      </article>
+
+      <!-- 05 Levelling -->
+      <article class="card bg-olive-deep border border-[color:var(--moss)] relative overflow-hidden card-link">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] text-[color:var(--moss-2)]/80 tracking-widest">05 / LEVELLING</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--moss-2)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">Concrete Levelling</h3>
+        <p class="mt-3 text-[14px] text-[color:var(--ink-soft)]/80 leading-[1.6] max-w-[320px]">Tripping hazards. Lifted slabs. Low spots. Assess, fix, finish — looks like it was meant to be flat.</p>
+        <div class="mt-8 h-[2px] w-1/2 bg-[color:var(--moss)]/40"></div>
+        <ul class="mt-3 text-[12.5px] text-[color:var(--ink-soft)]/70 space-y-1 f-mono uppercase tracking-wider">
+          <li>· Grinding + resurfacing</li>
+          <li>· Mud-jacking where suitable</li>
+          <li>· Honest replace-vs-repair call</li>
+        </ul>
+      </article>
+
+      <!-- 06 Crawl Space -->
+      <article class="card card-line bg-surface2 relative overflow-hidden card-link">
+        <div class="flex items-start justify-between">
+          <span class="f-mono text-[11px] muted tracking-widest">06 / CRAWL</span>
+          <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--moss-2)" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+        <h3 class="f-display text-[40px] sm:text-[48px] tracking-tight mt-12 leading-[0.95]">Crawl Space Foundations</h3>
+        <p class="mt-3 text-[14px] muted leading-[1.6] max-w-[320px]">Sub-floor footings and access slabs for older Sydney homes. Tight access, awkward angles — handled.</p>
+        <div class="mt-8 h-[2px] w-1/2 bg-[color:var(--line-2)]"></div>
+        <ul class="mt-3 text-[12.5px] muted space-y-1 f-mono uppercase tracking-wider">
+          <li>· Site protection + access</li>
+          <li>· Coordination with trades</li>
+          <li>· Clean before + clean after</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Sub-CTA -->
+    <div class="mt-12 lg:mt-16 rounded-md bg-asphalt border border-[color:var(--line-2)] p-8 lg:p-12 grain grain-heavy relative overflow-hidden">
+      <div class="absolute -right-12 -bottom-16 w-[300px] h-[300px] rounded-full bg-[color:var(--moss)]/20 blur-3xl"></div>
+      <div class="grid grid-cols-12 gap-6 items-center relative">
+        <div class="col-span-12 md:col-span-8">
+          <div class="eyebrow mb-3">— Not sure what you need?</div>
+          <h3 class="f-display text-[34px] sm:text-[52px] tracking-tight leading-[1.0]">Send a photo. We'll tell you what it'll cost &amp; how long it'll take. <span class="moss">No tradie tricks.</span></h3>
+        </div>
+        <div class="col-span-12 md:col-span-4 flex md:justify-end gap-3 flex-wrap">
+          <a href="tel:0410658592" class="btn btn-primary">Call Daniel</a>
+          <a href="#contact" class="btn btn-ghost">Quote Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / GALLERY -->
+<section id="work" class="bg-asphalt grain grain-heavy relative overflow-hidden border-y border-[color:var(--line)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28">
+
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10 lg:mb-14">
+      <div>
+        <div class="eyebrow mb-4">— 01 / Recent Jobs · File Archive</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[92px] lg:text-[124px]">From dirt <br/>to <span class="text-[color:var(--moss-2)]">finish.</span></h2>
+      </div>
+      <p class="max-w-[380px] text-[15px] muted leading-[1.65]">Every job starts the same way — proper prep, proper reinforcement, proper finish. A few we've wrapped recently.</p>
+    </div>
+
+    <!-- Editorial gallery grid -->
+    <div class="grid grid-cols-12 gap-3 lg:gap-4">
+
+      <div class="photo col-span-12 md:col-span-7 aspect-[16/11]">
+        <img src="assets/job-rebar-02.webp" alt="Rebar mat tied and ready for pour">
+        <div class="veil"></div>
+        <span class="img-badge">F-01 · Reinforcement Tied</span>
+        <div class="absolute right-4 top-4 chip chip-moss !text-[10px]">CROYDON · Shed Slab</div>
+        <div class="frame"></div>
+      </div>
+
+      <div class="photo col-span-12 md:col-span-5 aspect-[16/11]">
+        <img src="assets/job-rebar-01.webp" alt="Mesh and rebar grid laid across boxed slab">
+        <div class="veil"></div>
+        <span class="img-badge">F-02 · Mesh + Bar Grid</span>
+        <div class="frame"></div>
+      </div>
+
+      <div class="photo col-span-12 md:col-span-5 aspect-[4/3]">
+        <img src="assets/job-shed-fresh.webp" alt="Fresh poured concrete slab screeded flat">
+        <div class="veil"></div>
+        <span class="img-badge">F-03 · Pour + Screed</span>
+        <div class="frame"></div>
+      </div>
+
+      <div class="photo col-span-12 md:col-span-7 aspect-[4/3]">
+        <img src="assets/job-finished-01.webp" alt="Finished trowelled concrete slab Sydney backyard">
+        <div class="veil"></div>
+        <span class="img-badge">F-04 · Trowel Finish</span>
+        <div class="absolute right-4 top-4 chip chip-moss !text-[10px]">INNER WEST · Backyard</div>
+        <div class="frame"></div>
+      </div>
+
+      <div class="photo col-span-12 md:col-span-7 aspect-[16/10]">
+        <img src="assets/job-patio.webp" alt="Concrete patio slab next to pavers">
+        <div class="veil"></div>
+        <span class="img-badge">F-05 · Patio · Pavers + Pour</span>
+        <div class="frame"></div>
+      </div>
+
+      <div class="photo col-span-12 md:col-span-5 aspect-[16/10]">
+        <img src="assets/job-finished-02.webp" alt="Finished concrete slab smooth surface">
+        <div class="veil"></div>
+        <span class="img-badge">F-06 · Cured + Handed Over</span>
+        <div class="frame"></div>
+      </div>
+    </div>
+
+    <!-- Process numbers under gallery -->
+    <div class="mt-14 lg:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-[color:var(--line)] pt-12">
+      <div>
+        <div class="f-display text-[96px] sm:text-[128px] moss leading-[0.8]">01</div>
+        <div class="mt-2 f-display text-[20px] tracking-tight">Prep &amp; Box</div>
+        <p class="text-[12.5px] muted mt-1 leading-[1.6] f-mono uppercase tracking-wider">Excavate. Level. Set forms square.</p>
+      </div>
+      <div>
+        <div class="f-display text-[96px] sm:text-[128px] moss leading-[0.8]">02</div>
+        <div class="mt-2 f-display text-[20px] tracking-tight">Reinforce</div>
+        <p class="text-[12.5px] muted mt-1 leading-[1.6] f-mono uppercase tracking-wider">Mesh, bar, chairs. To spec.</p>
+      </div>
+      <div>
+        <div class="f-display text-[96px] sm:text-[128px] moss leading-[0.8]">03</div>
+        <div class="mt-2 f-display text-[20px] tracking-tight">Pour &amp; Finish</div>
+        <p class="text-[12.5px] muted mt-1 leading-[1.6] f-mono uppercase tracking-wider">Right mix. Screed, float, trowel.</p>
+      </div>
+      <div>
+        <div class="f-display text-[96px] sm:text-[128px] moss leading-[0.8]">04</div>
+        <div class="mt-2 f-display text-[20px] tracking-tight">Cure &amp; Clean</div>
+        <p class="text-[12.5px] muted mt-1 leading-[1.6] f-mono uppercase tracking-wider">Joints saw-cut. Site cleaned.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="relative bg-base grain">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28">
+
+    <div class="grid grid-cols-12 gap-y-10 lg:gap-10 items-end mb-14">
+      <div class="col-span-12 lg:col-span-7">
+        <div class="eyebrow mb-4">— 03 / The People Who've Paid Us</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[92px] lg:text-[124px] leading-[0.9]">Five reviews. <br/>Five <span class="text-[color:var(--moss-2)]">fives.</span></h2>
+        <p class="mt-6 max-w-[560px] text-[15px] muted leading-[1.65]">
+          We didn't cherry-pick the nice ones. These are <span class="font-semibold ink">every single rating</span> DM Concrete has on Google. We're keeping it that way.
+        </p>
+      </div>
+      <div class="col-span-12 lg:col-span-5">
+        <div class="rounded-md bg-asphalt border border-[color:var(--line-2)] p-6 lg:p-8 grain grain-heavy relative overflow-hidden">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-[color:var(--ink)] text-[color:var(--bg)] flex items-center justify-center font-bold f-display text-[22px]">G</div>
+            <div>
+              <div class="f-mono text-[10px] uppercase tracking-[0.18em] muted">Verified · Google</div>
+              <div class="f-display text-[20px] tracking-tight">DM Concrete · Croydon NSW</div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-end gap-4">
+            <div class="f-display text-[100px] sm:text-[124px] leading-[0.78] big-num">5.0</div>
+            <div class="pb-2">
+              <div class="star text-[22px] tracking-tight">★★★★★</div>
+              <div class="text-[11px] muted mt-1 f-mono uppercase tracking-wider">Based on 5 reviews</div>
+            </div>
+          </div>
+          <div class="mt-6 space-y-1.5">
+            <div class="grid grid-cols-[20px_1fr_30px] items-center gap-2 text-[10.5px] f-mono uppercase">
+              <span class="muted">5★</span><div class="bar"><span style="width:100%"></span></div><span class="moss">100%</span>
+            </div>
+            <div class="grid grid-cols-[20px_1fr_30px] items-center gap-2 text-[10.5px] f-mono uppercase muted">
+              <span>4★</span><div class="bar"></div><span>0%</span>
+            </div>
+            <div class="grid grid-cols-[20px_1fr_30px] items-center gap-2 text-[10.5px] f-mono uppercase muted">
+              <span>3★</span><div class="bar"></div><span>0%</span>
+            </div>
+            <div class="grid grid-cols-[20px_1fr_30px] items-center gap-2 text-[10.5px] f-mono uppercase muted">
+              <span>2★</span><div class="bar"></div><span>0%</span>
+            </div>
+            <div class="grid grid-cols-[20px_1fr_30px] items-center gap-2 text-[10.5px] f-mono uppercase muted">
+              <span>1★</span><div class="bar"></div><span>0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-4 lg:gap-5 [&>*]:break-inside-avoid">
+
+      <!-- 1 -->
+      <article class="card card-line bg-surface mb-4 lg:mb-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[color:var(--olive-deep)] text-[color:var(--moss-2)] flex items-center justify-center font-bold f-display text-[14px]">PE</div>
+          <div>
+            <div class="font-semibold text-[14px] ink">Paul Edwards</div>
+            <div class="text-[11px] muted f-mono uppercase tracking-wider">Local Guide · 949 reviews · 5 yrs ago</div>
+          </div>
+          <div class="ml-auto star text-[14px]">★★★★★</div>
+        </div>
+        <p class="mt-4 text-[14.5px] leading-[1.65] ink-soft">
+          "Daniel did an excellent job with my backyard shed slab. He was extremely <span class="uline">professional and helpful</span> the whole way through. Upfront about the work required and identified issues that no one else mentioned and provided the solution too. His quote was good and quality of work amazing. Couldn't be happier."
+        </p>
+        <div class="mt-4 flex items-center gap-2 text-[10px] muted f-mono uppercase tracking-wider">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          Verified · Backyard shed slab
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card bg-moss text-[color:var(--bg)] mb-4 lg:mb-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[color:var(--bg)] text-[color:var(--moss-2)] flex items-center justify-center font-bold f-display text-[14px]">DG</div>
+          <div>
+            <div class="font-semibold text-[14px]">Dinesh Gonsalkorale</div>
+            <div class="text-[11px] text-[color:var(--bg)]/65 f-mono uppercase tracking-wider">Local Guide · 12 reviews · 3 yrs ago</div>
+          </div>
+          <div class="ml-auto text-[color:var(--bg)] text-[14px]">★★★★★</div>
+        </div>
+        <p class="mt-4 text-[14.5px] leading-[1.65]">
+          "I've used DM Concreting twice in the last few years. Daniel is fantastic. He provides <span class="bg-[color:var(--bg)] text-[color:var(--moss-2)] px-1.5 rounded-sm font-bold">accurate and timely quotes</span>, and gets the job done on time and to a very high standard. He's 100% reliable, super flexible, a great problem solver. Works well with other trades. Highly recommend."
+        </p>
+        <div class="mt-4 flex flex-wrap items-center gap-1.5">
+          <span class="chip !bg-[color:var(--bg)] !text-[color:var(--moss-2)] !border-transparent">Levelling</span>
+          <span class="chip !bg-[color:var(--bg)] !text-[color:var(--moss-2)] !border-transparent">Crawl Space</span>
+          <span class="chip !bg-[color:var(--bg)] !text-[color:var(--moss-2)] !border-transparent">Paving</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card bg-olive-deep border border-[color:var(--moss)] mb-4 lg:mb-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[color:var(--moss-2)] text-[color:var(--bg)] flex items-center justify-center font-bold f-display text-[14px]">PM</div>
+          <div>
+            <div class="font-semibold text-[14px] ink">Paul Manurung</div>
+            <div class="text-[11px] muted f-mono uppercase tracking-wider">1 review · 3 yrs ago</div>
+          </div>
+          <div class="ml-auto star text-[14px]">★★★★★</div>
+        </div>
+        <p class="mt-4 text-[14.5px] leading-[1.65] ink-soft">
+          "I needed to get my long driveway done, so I was looking for a concreter I could trust and I found Daniel from DM Concrete. Now I have a <span class="moss font-bold">beautiful driveway</span>. I can't recommend him enough for his quality, care and promptness. I'll seek him out for my future jobs."
+        </p>
+        <div class="mt-4 flex items-center gap-1.5">
+          <span class="chip !bg-transparent">Long driveway</span>
+          <span class="chip !bg-transparent">Repeat customer</span>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card card-line bg-surface2 mb-4 lg:mb-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[color:var(--rust)] text-[color:var(--ink)] flex items-center justify-center font-bold f-display text-[14px]">CD</div>
+          <div>
+            <div class="font-semibold text-[14px] ink">Christina Dinh</div>
+            <div class="text-[11px] muted f-mono uppercase tracking-wider">4 reviews · 5 yrs ago</div>
+          </div>
+          <div class="ml-auto star text-[14px]">★★★★★</div>
+        </div>
+        <p class="mt-4 text-[14.5px] leading-[1.65] ink-soft">
+          "Daniel was amazing. He was so <span class="uline">knowledgeable</span> and really took the time to explain everything. Went above and beyond and really helped me out with guiding me on what would look best. Would definitely recommend."
+        </p>
+        <div class="mt-5">
+          <div class="label mb-2">Christina praised:</div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="chip">Responsiveness</span>
+            <span class="chip">Punctuality</span>
+            <span class="chip">Quality</span>
+            <span class="chip">Professionalism</span>
+            <span class="chip">Value</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card bg-asphalt border border-[color:var(--moss)] mb-4 lg:mb-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[color:var(--moss-2)] text-[color:var(--bg)] flex items-center justify-center font-bold f-display text-[14px]">AG</div>
+          <div>
+            <div class="font-semibold text-[14px] ink">Adolfo Garrido</div>
+            <div class="text-[11px] muted f-mono uppercase tracking-wider">4 reviews · 4 yrs ago</div>
+          </div>
+          <div class="ml-auto text-[color:var(--moss-2)] text-[14px]">★★★★★</div>
+        </div>
+        <p class="mt-4 text-[14.5px] leading-[1.65] ink-soft">
+          "Very happy with the job. Daniel was very easy to deal with and very knowledgeable, had an eye for detail and explains his suggestions clearly. Very reasonable rates. <span class="moss font-bold">The only reason I gave 5 stars is because 6 was not offered as an option.</span>"
+        </p>
+        <div class="mt-5">
+          <div class="label mb-2">Adolfo praised:</div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="chip">Responsiveness</span>
+            <span class="chip">Punctuality</span>
+            <span class="chip">Quality</span>
+            <span class="chip">Pro</span>
+            <span class="chip">Value</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 placeholder -->
+      <article class="card border border-dashed border-[color:var(--line-2)] bg-transparent mb-4 lg:mb-5 flex flex-col">
+        <div class="label">Spot #6 reserved for</div>
+        <h3 class="f-display text-[52px] tracking-tight mt-3 leading-[0.95]">You.</h3>
+        <p class="text-[13.5px] muted leading-[1.65] mt-3">Every job we take on is a chance to keep this number perfect. We've got something to protect — and you've got something to build. Let's do it right.</p>
+        <a href="#contact" class="btn btn-primary mt-6 self-start">
+          Start the conversation
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT DANIEL -->
+<section id="about" class="bg-surface border-y border-[color:var(--line)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28">
+    <div class="grid grid-cols-12 gap-y-10 lg:gap-12">
+
+      <div class="col-span-12 lg:col-span-7">
+        <div class="eyebrow mb-4">— Who's pouring your slab</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[80px] lg:text-[104px] leading-[0.9]">Hi. I'm <span class="uline">Daniel.</span> <br/>I own <span class="text-[color:var(--moss-2)]">every</span> finish.</h2>
+        <div class="mt-8 max-w-[600px] space-y-5 text-[15.5px] leading-[1.75] ink-soft">
+          <p>I started DM Concrete to do concrete the way I'd want it done at my own place. No subcontracted finishers I've never met. No over-promised quotes. No "she'll be right" corners cut. Every quote I write, I'm on site for the pour.</p>
+          <p>I'm based in Croydon and most of my work is across the Inner West and surrounding suburbs. If your job is bigger than a coffee table and smaller than a stadium, it's probably the right size for us.</p>
+          <p class="ink font-semibold">If you're getting quotes — talk to me last. I'll tell you the truth about whatever the other quotes said.</p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center gap-3">
+          <a href="tel:0410658592" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+            Call Me · 0410 658 592
+          </a>
+          <a href="#contact" class="btn btn-ghost">Send a quote request</a>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-5">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="photo aspect-[3/4] row-span-2">
+            <img src="assets/job-shed-fresh.webp" alt="Fresh concrete slab work by Daniel">
+            <div class="veil"></div>
+            <div class="frame"></div>
+          </div>
+          <div class="photo aspect-square">
+            <img src="assets/job-rebar-01.webp" alt="Rebar prep on a Sydney site">
+            <div class="veil"></div>
+            <div class="frame"></div>
+          </div>
+          <div class="card bg-olive-deep border border-[color:var(--moss)] p-5 aspect-square flex flex-col justify-between">
+            <div>
+              <div class="eyebrow mb-3">Service Area</div>
+              <div class="f-display text-[22px] tracking-tight leading-[1.05]">Inner West Sydney</div>
+            </div>
+            <div class="text-[11.5px] muted leading-[1.5] f-mono uppercase tracking-wider">Croydon · Burwood · Strathfield · Ashfield · Concord · Drummoyne · Five Dock · Leichhardt · Marrickville</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="relative bg-moss text-[color:var(--bg)] overflow-hidden border-y border-[color:var(--moss)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-16 lg:py-24 relative">
+    <div class="grid grid-cols-12 gap-6 items-center">
+      <div class="col-span-12 lg:col-span-9">
+        <div class="f-mono text-[10px] uppercase tracking-[0.18em] text-[color:var(--bg)]/55 mb-4">— Pull-Quote of the Year</div>
+        <p class="f-display text-[42px] sm:text-[64px] lg:text-[88px] leading-[0.95]">
+          "The only reason I gave 5 stars is because <span class="f-stencil">6 was not offered as an option.</span>"
+        </p>
+        <div class="mt-6 text-[12px] uppercase tracking-[0.18em] f-mono">— Adolfo G. · Verified Google review · 4 yrs ago</div>
+      </div>
+      <div class="col-span-12 lg:col-span-3 lg:text-right">
+        <div class="inline-flex flex-col gap-3 items-start lg:items-end">
+          <span class="stamp">Real review · not edited</span>
+          <span class="stamp">5 of 5 reviews are 5★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-3 hazard"></div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="bg-base grain">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28">
+    <div class="grid grid-cols-12 gap-y-8 lg:gap-10 items-end mb-12">
+      <div class="col-span-12 lg:col-span-7">
+        <div class="eyebrow mb-4">— 04 / How a job actually goes</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[88px] lg:text-[112px]">From call <br/>to <span class="text-[color:var(--moss-2)]">clean-up.</span></h2>
+      </div>
+      <div class="col-span-12 lg:col-span-5">
+        <p class="text-[15px] muted leading-[1.65]">No vague tradie process. Here's exactly what happens when you book in with DM Concrete — start to finish.</p>
+      </div>
+    </div>
+
+    <ol class="relative">
+      <div class="absolute left-[22px] md:left-[36px] top-2 bottom-2 w-[1px] bg-[color:var(--line-2)]"></div>
+
+      <li class="relative pl-14 md:pl-24 pb-10 md:pb-14">
+        <div class="absolute left-0 top-0 w-[44px] h-[44px] md:w-[72px] md:h-[72px] rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center f-display text-[20px] md:text-[28px]">01</div>
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-4">
+            <div class="f-display text-[26px] md:text-[36px] tracking-tight">You call or message</div>
+            <div class="label mt-2">Same-day reply</div>
+          </div>
+          <div class="col-span-12 md:col-span-8 text-[15px] ink-soft leading-[1.7]">Send a few photos, rough measurements, and what you're trying to achieve. We'll come back with whether it's a job for us, a rough indicator, and a time to come look.</div>
+        </div>
+      </li>
+
+      <li class="relative pl-14 md:pl-24 pb-10 md:pb-14">
+        <div class="absolute left-0 top-0 w-[44px] h-[44px] md:w-[72px] md:h-[72px] rounded-sm bg-moss text-[color:var(--bg)] flex items-center justify-center f-display text-[20px] md:text-[28px]">02</div>
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-4">
+            <div class="f-display text-[26px] md:text-[36px] tracking-tight">On-site quote</div>
+            <div class="label mt-2">Free · No obligation</div>
+          </div>
+          <div class="col-span-12 md:col-span-8 text-[15px] ink-soft leading-[1.7]">Daniel comes out, measures properly, looks at access, drainage, soil, and existing surfaces. You get a clear written quote with what's in and what's not.</div>
+        </div>
+      </li>
+
+      <li class="relative pl-14 md:pl-24 pb-10 md:pb-14">
+        <div class="absolute left-0 top-0 w-[44px] h-[44px] md:w-[72px] md:h-[72px] rounded-sm bg-olive-deep border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center f-display text-[20px] md:text-[28px]">03</div>
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-4">
+            <div class="f-display text-[26px] md:text-[36px] tracking-tight">Booked in, locked in</div>
+            <div class="label mt-2">A date you can plan around</div>
+          </div>
+          <div class="col-span-12 md:col-span-8 text-[15px] ink-soft leading-[1.7]">You pick a window that suits, we lock in the pour date. We organise the concrete order, reinforcement, and any other trades involved.</div>
+        </div>
+      </li>
+
+      <li class="relative pl-14 md:pl-24 pb-10 md:pb-14">
+        <div class="absolute left-0 top-0 w-[44px] h-[44px] md:w-[72px] md:h-[72px] rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center f-display text-[20px] md:text-[28px]">04</div>
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-4">
+            <div class="f-display text-[26px] md:text-[36px] tracking-tight">Pour day</div>
+            <div class="label mt-2">Daniel on the tools</div>
+          </div>
+          <div class="col-span-12 md:col-span-8 text-[15px] ink-soft leading-[1.7]">Pour, screed, float, trowel. Saw-cut control joints. Site cleaned. You're left with a sharp finish and a clean property.</div>
+        </div>
+      </li>
+
+      <li class="relative pl-14 md:pl-24">
+        <div class="absolute left-0 top-0 w-[44px] h-[44px] md:w-[72px] md:h-[72px] rounded-sm bg-moss text-[color:var(--bg)] flex items-center justify-center f-display text-[20px] md:text-[28px]">05</div>
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-4">
+            <div class="f-display text-[26px] md:text-[36px] tracking-tight">Cure &amp; follow-up</div>
+            <div class="label mt-2">We don't ghost</div>
+          </div>
+          <div class="col-span-12 md:col-span-8 text-[15px] ink-soft leading-[1.7]">We check in once it's cured. Anything not right, we sort it. Most of our work comes back from previous customers — that's only true if we keep showing up.</div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-surface border-y border-[color:var(--line)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-24">
+    <div class="grid grid-cols-12 gap-y-10 lg:gap-10">
+      <div class="col-span-12 lg:col-span-4">
+        <div class="eyebrow mb-4">— Common Questions</div>
+        <h2 class="f-display display-large text-[48px] sm:text-[72px] lg:text-[80px] leading-[0.92]">Things people <br/>ask <span class="text-[color:var(--moss-2)]">before</span> they call.</h2>
+        <p class="mt-6 text-[14.5px] muted leading-[1.65] max-w-[360px]">If your question's not here, just ring. Daniel will pick up or call you back same day.</p>
+      </div>
+
+      <div class="col-span-12 lg:col-span-8 divide-y divide-[color:var(--line)] border-y border-[color:var(--line)]">
+        <details class="group py-5">
+          <summary class="flex items-start gap-4 cursor-pointer list-none">
+            <span class="f-mono text-[12px] muted mt-1">Q.01</span>
+            <span class="f-display text-[22px] sm:text-[28px] tracking-tight flex-1 leading-[1.05]">How much does a concrete slab actually cost?</span>
+            <span class="w-7 h-7 rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-4 ml-12 text-[14.5px] leading-[1.75] muted max-w-[640px]">It depends on size, thickness, reinforcement, finish, and access — and anyone who quotes you sight-unseen is guessing. We come out, measure, and give you a written quote that breaks it down. Then you can compare apples to apples.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex items-start gap-4 cursor-pointer list-none">
+            <span class="f-mono text-[12px] muted mt-1">Q.02</span>
+            <span class="f-display text-[22px] sm:text-[28px] tracking-tight flex-1 leading-[1.05]">How long does the job take?</span>
+            <span class="w-7 h-7 rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-4 ml-12 text-[14.5px] leading-[1.75] muted max-w-[640px]">A typical residential slab is 2–4 days on site: prep, reinforce, pour, finish. Then 5–7 days curing before you load it. We'll tell you upfront when you can park on it, walk on it, build on it.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex items-start gap-4 cursor-pointer list-none">
+            <span class="f-mono text-[12px] muted mt-1">Q.03</span>
+            <span class="f-display text-[22px] sm:text-[28px] tracking-tight flex-1 leading-[1.05]">Do you do small jobs?</span>
+            <span class="w-7 h-7 rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-4 ml-12 text-[14.5px] leading-[1.75] muted max-w-[640px]">Yes. Side passages, garden bed footings, a single shed slab — if it makes sense for both of us, we'll do it. Same standard whether it's 4 square metres or 40.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex items-start gap-4 cursor-pointer list-none">
+            <span class="f-mono text-[12px] muted mt-1">Q.04</span>
+            <span class="f-display text-[22px] sm:text-[28px] tracking-tight flex-1 leading-[1.05]">Are you licensed &amp; insured?</span>
+            <span class="w-7 h-7 rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-4 ml-12 text-[14.5px] leading-[1.75] muted max-w-[640px]">Yes — fully insured, with public liability cover for residential and small commercial. Happy to send through the certificate of currency before we start.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex items-start gap-4 cursor-pointer list-none">
+            <span class="f-mono text-[12px] muted mt-1">Q.05</span>
+            <span class="f-display text-[22px] sm:text-[28px] tracking-tight flex-1 leading-[1.05]">What if I'm not sure what I need?</span>
+            <span class="w-7 h-7 rounded-sm bg-asphalt border border-[color:var(--moss)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-4 ml-12 text-[14.5px] leading-[1.75] muted max-w-[640px]">That's literally what we're paid to figure out. Show us the space, tell us what you want it to do, and we'll tell you what makes sense — and what's a waste of money.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-base grain grain-heavy relative overflow-hidden">
+  <div class="absolute -right-32 -top-32 w-[480px] h-[480px] rounded-full bg-[color:var(--moss)]/12 blur-3xl"></div>
+  <div class="absolute -left-40 -bottom-40 w-[520px] h-[520px] rounded-full bg-[color:var(--olive)]/40 blur-3xl"></div>
+
+  <div class="max-w-[1400px] mx-auto px-5 py-20 lg:py-28 relative">
+    <div class="grid grid-cols-12 gap-y-12 lg:gap-12">
+
+      <div class="col-span-12 lg:col-span-6">
+        <div class="eyebrow mb-5">— 05 / Get a Free Quote</div>
+        <h2 class="f-display display-large text-[56px] sm:text-[92px] lg:text-[112px]">Let's pour <br/>something <span class="text-[color:var(--moss-2)]">solid.</span></h2>
+        <p class="mt-7 max-w-[520px] text-[15.5px] ink-soft leading-[1.7]">Call the number. Fire over a message. Or fill the form. You'll hear back from Daniel — not a call centre, not a bot, not next week.</p>
+
+        <!-- Big call card -->
+        <a href="tel:0410658592" class="mt-10 block rounded-md bg-moss text-[color:var(--bg)] p-7 lg:p-9 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_rgba(107,138,79,.5)] border border-[color:var(--moss-2)]">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="f-mono text-[10.5px] uppercase tracking-[0.18em] text-[color:var(--bg)]/60">Tap to Call · Mon–Fri 7a–5p</div>
+              <div class="f-display text-[42px] sm:text-[56px] lg:text-[68px] mt-2 leading-[0.95]">0410 658 592</div>
+              <div class="text-[12px] text-[color:var(--bg)]/65 mt-2 f-mono uppercase tracking-wider">Daniel · DM Concrete · Croydon NSW 2133</div>
+            </div>
+            <div class="w-14 h-14 rounded-full bg-[color:var(--bg)] text-[color:var(--moss-2)] flex items-center justify-center flex-shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <div class="mt-10 grid grid-cols-2 gap-6">
+          <div>
+            <div class="label mb-2">Based in</div>
+            <div class="f-display text-[22px] tracking-tight leading-tight">46 Arthur St,<br/>Croydon NSW 2133</div>
+          </div>
+          <div>
+            <div class="label mb-2">Hours</div>
+            <div class="text-[14px] leading-[1.7] ink-soft">
+              Mon–Fri · 7am – 5pm<br/>
+              Sat–Sun · Closed<br/>
+              <span class="moss">After-hours quotes by appt.</span>
+            </div>
+          </div>
+          <div>
+            <div class="label mb-2">We service</div>
+            <div class="text-[14px] leading-[1.7] ink-soft">Croydon, Burwood, Strathfield, Ashfield, Concord, Drummoyne &amp; surrounding Inner West.</div>
+          </div>
+          <div>
+            <div class="label mb-2">Reach us</div>
+            <div class="text-[14px] leading-[1.7]"><a class="navlink hover:moss !text-[14px] !tracking-normal !normal-case !font-normal" style="font-family:'Archivo'" href="tel:0410658592">0410 658 592</a><br/><a class="navlink hover:moss !text-[14px] !tracking-normal !normal-case !font-normal" style="font-family:'Archivo'" href="#">hello@dmconcrete.com.au</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-6">
+        <form class="rounded-md bg-surface border border-[color:var(--line-2)] p-7 lg:p-10 relative">
+          <div class="absolute -top-3 -right-3 chip chip-moss">★ Avg. reply in 4 hrs</div>
+          <div class="f-mono text-[10.5px] muted uppercase tracking-[0.18em]">Quote Form · DM-Q-0001</div>
+          <h3 class="f-display text-[32px] sm:text-[40px] tracking-tight mt-2 leading-[1]">Tell us about the job.</h3>
+
+          <div class="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1">
+            <div>
+              <div class="label">Your name</div>
+              <input class="field" type="text" placeholder="e.g. Paul Edwards" />
+            </div>
+            <div>
+              <div class="label">Phone</div>
+              <input class="field" type="tel" placeholder="04xx xxx xxx" />
+            </div>
+            <div class="sm:col-span-2">
+              <div class="label">Suburb / postcode</div>
+              <input class="field" type="text" placeholder="e.g. Croydon 2133" />
+            </div>
+            <div class="sm:col-span-2 mt-3">
+              <div class="label">Job type</div>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Driveway</label>
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Shed slab</label>
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Patio</label>
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Footings</label>
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Levelling</label>
+                <label class="chip cursor-pointer hover:!border-[color:var(--moss)]">Not sure</label>
+              </div>
+            </div>
+            <div class="sm:col-span-2 mt-3">
+              <div class="label">Roughly when?</div>
+              <input class="field" type="text" placeholder="e.g. Next few weeks" />
+            </div>
+            <div class="sm:col-span-2 mt-3">
+              <div class="label">A bit about the job</div>
+              <textarea class="field resize-none" rows="3" placeholder="Size, location on the property, anything tricky."></textarea>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <button type="button" class="btn btn-primary">
+              Send to Daniel
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <span class="text-[12px] muted f-mono uppercase tracking-wider">No spam. Quotes only.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-16 lg:mt-24 pt-8 border-t border-[color:var(--line)] flex flex-wrap items-center justify-between gap-4 text-[11px] muted f-mono uppercase tracking-wider">
+      <div class="flex items-center gap-3">
+        <span class="star">★★★★★</span>
+        <span>5.0 · every Google review · zero negative</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <span>Licensed concreter, NSW</span>
+        <span>Public liability insured</span>
+        <span>ABN on request</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-asphalt border-t border-[color:var(--line)]">
+  <div class="max-w-[1400px] mx-auto px-5 py-12 lg:py-16">
+
+    <div style="color: rgba(232,228,216,0.06)" class="f-display leading-[0.85] text-[15vw] lg:text-[16.5vw] select-none -mb-4 lg:-mb-10 whitespace-nowrap text-center">
+      DM&nbsp;CONCRETE
+    </div>
+
+    <div class="grid grid-cols-12 gap-y-10 lg:gap-8 mt-10 relative">
+      <div class="col-span-12 lg:col-span-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 border border-[color:var(--moss-2)] text-[color:var(--moss-2)] flex items-center justify-center f-display text-[16px]">DM</span>
+          <span class="f-display text-[22px] leading-none tracking-tight">DM&nbsp;Concrete</span>
+        </div>
+        <p class="mt-5 text-[14px] muted max-w-[420px] leading-[1.7]">Sydney's Inner West concreter. Driveways, shed slabs, footings, paving — done properly by Daniel and a small, reliable crew.</p>
+        <div class="mt-6 flex items-center gap-2 flex-wrap">
+          <span class="chip">★ 5.0 Google</span>
+          <span class="chip">Owner-operated</span>
+          <span class="chip">Insured</span>
+        </div>
+      </div>
+
+      <div class="col-span-6 lg:col-span-2">
+        <div class="label mb-4">Services</div>
+        <ul class="space-y-2 text-[14px] ink-soft">
+          <li><a class="hover:moss" href="#services">Driveways</a></li>
+          <li><a class="hover:moss" href="#services">Shed slabs</a></li>
+          <li><a class="hover:moss" href="#services">Paving</a></li>
+          <li><a class="hover:moss" href="#services">Footings</a></li>
+          <li><a class="hover:moss" href="#services">Levelling</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-6 lg:col-span-2">
+        <div class="label mb-4">The Site</div>
+        <ul class="space-y-2 text-[14px] ink-soft">
+          <li><a class="hover:moss" href="#work">Recent work</a></li>
+          <li><a class="hover:moss" href="#reviews">Reviews</a></li>
+          <li><a class="hover:moss" href="#process">Process</a></li>
+          <li><a class="hover:moss" href="#about">About</a></li>
+          <li><a class="hover:moss" href="#contact">Get a quote</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-12 lg:col-span-3">
+        <div class="label mb-4">Contact</div>
+        <a href="tel:0410658592" class="block f-display text-[28px] tracking-tight moss">0410 658 592</a>
+        <div class="mt-3 text-[14px] ink-soft leading-[1.65]">46 Arthur St<br/>Croydon NSW 2133</div>
+        <div class="mt-2 text-[12px] muted f-mono uppercase tracking-wider">Mon–Fri · 7am – 5pm</div>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-6 border-t border-[color:var(--line)] flex flex-wrap items-center justify-between gap-3 text-[11px] muted f-mono uppercase tracking-wider">
+      <div>© <span id="yr">2026</span> DM Concrete · ABN on request · Croydon NSW</div>
+      <div class="flex items-center gap-5">
+        <a class="hover:moss" href="#">Privacy</a>
+        <a class="hover:moss" href="#">Built by hand · no slop</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<a href="tel:0410658592" class="sticky-cta md:hidden btn btn-primary !justify-center !w-full !py-3.5 !text-[13px] shadow-[0_18px_40px_-12px_rgba(0,0,0,.6)]">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+  Call Daniel · 0410 658 592
+</a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{
+    for(const e of entries){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.querySelectorAll('form .chip').forEach(c=>{
+    c.addEventListener('click', ()=> {
+      c.classList.toggle('chip-moss');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500&family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-font-smoothing:antialiased; }
+  html,body{ width:1200px; height:630px; background:#0A0E0C; color:#E8E4D8; font-family:'Anton',sans-serif; overflow:hidden; }
+  .wrap{
+    position:relative; width:1200px; height:630px; padding:60px 70px;
+    background:
+      radial-gradient(900px 600px at 85% 10%, rgba(107,138,79,.22), transparent 60%),
+      radial-gradient(800px 600px at 5% 95%, rgba(38,46,28,.7), transparent 60%),
+      #0A0E0C;
+    overflow:hidden;
+  }
+  .grain::after{
+    content:''; position:absolute; inset:0; opacity:.25;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode:overlay; pointer-events:none;
+  }
+  .top{ position:relative; display:flex; align-items:center; gap:18px; font-family:'JetBrains Mono',monospace; font-size:18px; letter-spacing:.18em; text-transform:uppercase; color:#D8D4C7; }
+  .badge{ width:54px; height:54px; border:2px solid #7FA365; color:#7FA365; display:flex; align-items:center; justify-content:center; font-family:'Anton'; font-size:24px; letter-spacing:-0.02em; }
+  .top .dot{ width:8px; height:8px; background:#7FA365; border-radius:50%; }
+  .top .right{ margin-left:auto; color:#7FA365; }
+  .body{ position:relative; margin-top:36px; }
+  h1{
+    font-family:'Anton', sans-serif; font-size:140px; line-height:.88; letter-spacing:-.005em;
+    text-transform:uppercase; color:#E8E4D8;
+  }
+  h1 .moss{ color:#7FA365; }
+  h1 .stencil{ font-family:'Big Shoulders Stencil Display'; font-weight:900; font-size:.85em; }
+  .sub{
+    margin-top:30px; max-width:780px; font-family:'JetBrains Mono'; font-size:18px; line-height:1.6; letter-spacing:.04em; color:#8A8F86; text-transform:uppercase;
+  }
+  .sub b{ color:#E8E4D8; font-weight:500; }
+  .footer{
+    position:absolute; left:70px; right:70px; bottom:50px; display:flex; align-items:center; justify-content:space-between;
+    font-family:'JetBrains Mono'; font-size:16px; letter-spacing:.14em; text-transform:uppercase;
+  }
+  .stars{ color:#D9A23A; font-size:22px; letter-spacing:.1em; }
+  .phone{ background:#7FA365; color:#0A0E0C; padding:12px 22px; border-radius:4px; font-family:'Anton'; font-size:28px; letter-spacing:-.005em; }
+  .hazard{ position:absolute; left:0; right:0; bottom:0; height:14px;
+    background:repeating-linear-gradient(45deg,#7FA365 0 14px,#0A0E0C 14px 28px);
+  }
+</style>
+</head>
+<body>
+<div class="wrap grain">
+  <div class="top">
+    <div class="badge">DM</div>
+    <span><span class="dot"></span> &nbsp; DM Concrete · Croydon NSW · Sydney</span>
+    <span class="right">★ 5.0 Google</span>
+  </div>
+
+  <div class="body">
+    <h1>
+      Built<br>
+      to <span class="moss">Last.</span><br>
+      Poured to <span class="stencil">Spec.</span>
+    </h1>
+    <div class="sub">
+      Sydney's Inner West concreter. <b>Driveways, shed slabs, footings, paving.</b><br>
+      Honest quotes. On time. 5.0★ on Google · zero negative reviews.
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="stars">★★★★★ &nbsp; 5 of 5 reviews are 5★</span>
+    <span class="phone">CALL 0410 658 592</span>
+  </div>
+
+  <div class="hazard"></div>
+</div>
+</body>
+</html>
